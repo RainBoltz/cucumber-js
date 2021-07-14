@@ -217,6 +217,11 @@ const ArgvParser = {
         ArgvParser.mergeJson('--world-parameters'),
         {}
       )
+      .option(
+        '--test-run <TEST RUN NAME>',
+        'provide target test run',
+        ''
+      )
 
     program.on('--help', () => {
       /* eslint-disable no-console */
