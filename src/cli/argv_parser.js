@@ -151,6 +151,10 @@ export default class ArgvParser {
         'provide parameters that will be passed to the world constructor (repeatable)',
         ArgvParser.mergeJson('--world-parameters'),
         {}
+      ).option(
+        '--test-run <TEST RUN NAME>',
+        'provide target test run',
+        ''
       )
 
     program.on('--help', () => {
